@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/archtoxws/WSRole?wsdl" uri="xml-resources/web-service-references/WSRole/wsdl/localhost_8080/archtoxws/WSRole.wsdl"/>
+    <system systemId="http://localhost:8080/archtoxws/WSRole?xsd=1" uri="xml-resources/web-service-references/WSRole/wsdl/localhost_8080/archtoxws/WSRole.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/archtoxws/WSUsuario?wsdl" uri="xml-resources/web-service-references/WSUsuario/wsdl/localhost_8080/archtoxws/WSUsuario.wsdl"/>
+    <system systemId="http://localhost:8080/archtoxws/WSUsuario?xsd=1" uri="xml-resources/web-service-references/WSUsuario/wsdl/localhost_8080/archtoxws/WSUsuario.xsd_1.xsd"/>
+    <system systemId="http://170.239.86.165:8084/archtoxws/WSRole?wsdl" uri="xml-resources/web-service-references/WSRole/wsdl/170.239.86.165_8084/archtoxws/WSRole.wsdl"/>
+    <system systemId="http://170.239.86.165:8084/archtoxws/WSRole?xsd=1" uri="xml-resources/web-service-references/WSRole/wsdl/170.239.86.165_8084/archtoxws/WSRole.xsd_1.xsd"/>
+    <system systemId="http://170.239.86.165:8084/archtoxws/WSUsuario?wsdl" uri="xml-resources/web-service-references/WSUsuario/wsdl/170.239.86.165_8084/archtoxws/WSUsuario.wsdl"/>
+    <system systemId="http://170.239.86.165:8084/archtoxws/WSUsuario?xsd=1" uri="xml-resources/web-service-references/WSUsuario/wsdl/170.239.86.165_8084/archtoxws/WSUsuario.xsd_1.xsd"/>
+</catalog>

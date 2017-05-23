@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://archtoxwebservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://archtoxwebservice/">
+
+<xs:element name="acceso" type="tns:acceso" />
+
+<xs:element name="agregarAcceso" type="tns:agregarAcceso" />
+
+<xs:element name="agregarAccesoResponse" type="tns:agregarAccesoResponse" />
+
+<xs:element name="agregarUsuario" type="tns:agregarUsuario" />
+
+<xs:element name="agregarUsuarioResponse" type="tns:agregarUsuarioResponse" />
+
+<xs:element name="buscarRol" type="tns:buscarRol" />
+
+<xs:element name="buscarRolResponse" type="tns:buscarRolResponse" />
+
+<xs:element name="iniciarSesion" type="tns:iniciarSesion" />
+
+<xs:element name="iniciarSesionResponse" type="tns:iniciarSesionResponse" />
+
+<xs:element name="obtenerNombreUsuario" type="tns:obtenerNombreUsuario" />
+
+<xs:element name="obtenerNombreUsuarioResponse" type="tns:obtenerNombreUsuarioResponse" />
+
+<xs:element name="obtenerUsuario" type="tns:obtenerUsuario" />
+
+<xs:element name="obtenerUsuarioResponse" type="tns:obtenerUsuarioResponse" />
+
+<xs:element name="rol" type="tns:rol" />
+
+<xs:element name="usuario" type="tns:usuario" />
+
+<xs:complexType name="agregarAcceso">
+<xs:sequence>
+<xs:element name="id_user" type="xs:int" />
+<xs:element name="key_pass" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarAccesoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarSesion">
+<xs:sequence>
+<xs:element name="id_user" type="xs:int" />
+<xs:element name="key_pass" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarSesionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerUsuario">
+<xs:sequence>
+<xs:element name="id_user" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuario">
+<xs:sequence>
+<xs:element name="acceso" type="tns:acceso" minOccurs="0" />
+<xs:element name="apellidos" type="xs:string" minOccurs="0" />
+<xs:element name="correo" type="xs:string" minOccurs="0" />
+<xs:element name="idRol" type="tns:rol" minOccurs="0" />
+<xs:element name="idUser" type="xs:int" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="acceso">
+<xs:sequence>
+<xs:element name="idUser" type="xs:int" minOccurs="0" />
+<xs:element name="keyPass" type="xs:string" minOccurs="0" />
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rol">
+<xs:sequence>
+<xs:element name="idRol" type="xs:int" minOccurs="0" />
+<xs:element name="nombreRol" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarUsuario">
+<xs:sequence>
+<xs:element name="id_rol" type="xs:int" />
+<xs:element name="id_user" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="apellidos" type="xs:string" minOccurs="0" />
+<xs:element name="correo" type="xs:string" minOccurs="0" />
+<xs:element name="key_pass" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerNombreUsuario">
+<xs:sequence>
+<xs:element name="id_user" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerNombreUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarRol">
+<xs:sequence>
+<xs:element name="id_rol" type="xs:int" />
+<xs:element name="nombre_rol" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarRolResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rol" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
